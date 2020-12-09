@@ -1,0 +1,129 @@
+﻿<Window x:Class="compoundInterestCalculator.CompoundInterestCalulatorMain"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:compoundInterestCalculator"
+        mc:Ignorable="d"
+        Title="Compound Interest Calculator" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="20"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="20"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="20"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="20"/>
+        </Grid.RowDefinitions>
+        <Grid Grid.Column="2" Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="40"/>
+                <RowDefinition Height="40"/>
+                <RowDefinition Height="40"/>
+                <RowDefinition Height="0"/>
+                <RowDefinition Height="40"/>
+                <RowDefinition Height="40"/>
+                <RowDefinition Height="40"/>
+                <RowDefinition Height="40"/>
+                <RowDefinition Height="10"/>
+                <RowDefinition Height="40"/>
+                <RowDefinition Height="40"/>
+                <RowDefinition Height="40"/>
+            </Grid.RowDefinitions>
+            <!-- Principal -->
+            <Label Name="PrincipalLabel" Content="Principal Amount:" Grid.Column="0" Grid.Row="0"  VerticalContentAlignment="Center" FontSize="15"/>
+            <TextBox Name="Principal" Grid.Column="1"  Grid.Row="0" VerticalContentAlignment="Center" Height="30" Text="1000" BorderBrush="#ccc" Padding="5 0 5 0"/>
+
+            <!-- Annual Interest Rate -->
+            <Label Content="Interest Rate:" Grid.Column="0" Grid.Row="1" VerticalContentAlignment="Center" FontSize="15"/>
+            <TextBox Name="InterestRateResult" Grid.Column="1"  Grid.Row="1" VerticalContentAlignment="Center" Height="30" Text="10"  BorderBrush="#ccc" Padding="5 0 5 0"/>
+
+            <!-- Years of Grouth -->
+            <Label Content="Years of Grouth:" Grid.Column="0" Grid.Row="2" VerticalContentAlignment="Center" FontSize="15"/>
+
+            <TextBox Name="YearsOfGrouth" Grid.Column="1"  Grid.Row="2" VerticalContentAlignment="Center" Height="30" Text="30" BorderBrush="#ccc" Padding="5 0 5 0"/>
+            
+            <!-- Compound Frequency -->
+            <Label Content="Compound Frequency:" Grid.Column="0" Grid.Row="4" VerticalContentAlignment="Center" FontSize="15"/>
+            <ComboBox Name="CompoundFrequency" Grid.Column="1" Grid.Row="4" VerticalContentAlignment="Center" Height="30"  BorderBrush="#ccc" BorderThickness="1"  >
+                <ComboBoxItem Tag="1" IsSelected="True" >Anual</ComboBoxItem>
+                <ComboBoxItem Tag="2">Semi-Annual</ComboBoxItem>
+                <ComboBoxItem Tag="4">Quarterly</ComboBoxItem>
+                <ComboBoxItem Tag="6" >Bi-Montly</ComboBoxItem>
+                <ComboBoxItem Tag="12">Montly</ComboBoxItem>
+                <ComboBoxItem Tag="24">Semi-Montly</ComboBoxItem>
+                <ComboBoxItem Tag="26" >Bi-Weekly</ComboBoxItem>
+                <ComboBoxItem Tag="52">Weekly</ComboBoxItem>
+                <ComboBoxItem Tag="365">Daily</ComboBoxItem>
+            </ComboBox>
+
+
+            <!-- Payment -->
+            <Label Content="Payment:" Grid.Column="0" Grid.Row="5" VerticalContentAlignment="Center" FontSize="15"/>
+            <TextBox Name="Payment" Grid.Column="1" Grid.Row="5" VerticalContentAlignment="Center" Height="30" Text="200"  BorderBrush="#ccc" Padding="5 0 5 0"/>
+
+            <!-- Payment Frequency -->
+            <Label Content="Payment Frequency:" Grid.Column="0" Grid.Row="6" VerticalContentAlignment="Center" FontSize="15"/>
+            <ComboBox Name="PaymentFrequency" Grid.Column="1" Grid.Row="6" VerticalContentAlignment="Center" Height="30"  BorderBrush="#ccc">
+                <ComboBoxItem Tag="1" >Anual</ComboBoxItem>
+                <ComboBoxItem Tag="2">Semi-Annual</ComboBoxItem>
+                <ComboBoxItem Tag="4">Quarterly</ComboBoxItem>
+                <ComboBoxItem Tag="6">Bi-Montly</ComboBoxItem>
+                <ComboBoxItem Tag="12">Montly</ComboBoxItem>
+                <ComboBoxItem Tag="24">Semi-Montly</ComboBoxItem>
+                <ComboBoxItem Tag="26" IsSelected="True">Bi-Weekly</ComboBoxItem>
+                <ComboBoxItem Tag="52">Weekly</ComboBoxItem>
+                <ComboBoxItem Tag="365">Daily</ComboBoxItem>
+            </ComboBox>
+
+            <Button Grid.Row="10" Grid.Column="0" Grid.ColumnSpan="2"  Content="Calculate" Click="Button_Calculate"/>
+              
+        </Grid>
+        <!-- Results -->
+        <StackPanel Grid.Row="1" Grid.Column="1">
+            
+            <!-- Future Principal -->
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="20" />
+                </Grid.ColumnDefinitions>
+                <Label Name="FuturePrincipalLabel" Content="Total Payments:" VerticalContentAlignment="Center" FontSize="18" Grid.Column="0"/>
+                <Label Name="FuturePrincipalLabel2"    Grid.Column="1"/>
+                <TextBlock Name="FuturePrincipal" Height="20" TextAlignment="right" Text="0" Padding="0 0 5 0" Margin="0 0 20 0" FontSize="18" Grid.Column="1" FontWeight="Bold"/>
+            </Grid>
+
+            <!-- Future Interest -->
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="20" />
+                </Grid.ColumnDefinitions>
+                <Label Name="FutureInterestLabel" Content="Total Interest:" VerticalContentAlignment="Center" FontSize="18" Grid.Column="0"/>
+                <Label Name="FutureInterestLabel2"   Grid.Column="1" />
+                <TextBlock Name="FutureInterest" Height="20" TextAlignment="right" Text="0" Padding="0 0 5 0" Margin="0 0 20 0" FontSize="18" Grid.Column="1" FontWeight="Bold"/>
+            </Grid>
+
+            <!-- Future Total -->
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="20" />
+                </Grid.ColumnDefinitions>
+                <Label Name="FutureValueLabel" Content="Future Value:"  VerticalContentAlignment="Center" FontSize="18" Grid.Column="0"/>
+                <Label Name="FutureValueLabel2"  Grid.Column="1" />
+                <TextBlock Name="FutureValue" Height="20" TextAlignment="right" Text="0" Padding="0 0 5 0" Margin="0 0 20 0" FontSize="18" Grid.Column="1" FontWeight="Bold"/>
+            </Grid>
+        </StackPanel>
+    </Grid>
+</Window>

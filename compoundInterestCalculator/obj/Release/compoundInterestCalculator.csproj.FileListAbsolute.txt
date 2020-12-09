@@ -1,0 +1,15 @@
+C:\Users\C#\Desktop\source\repos\compoundInterestCalculator\compoundInterestCalculator\obj\Release\MainWindow.g.cs
+C:\Users\C#\Desktop\source\repos\compoundInterestCalculator\compoundInterestCalculator\obj\Release\App.g.cs
+C:\Users\C#\Desktop\source\repos\compoundInterestCalculator\compoundInterestCalculator\obj\Release\MainWindow.baml
+C:\Users\C#\Desktop\source\repos\compoundInterestCalculator\compoundInterestCalculator\obj\Release\compoundInterestCalculator.Properties.Resources.resources
+C:\Users\C#\Desktop\source\repos\compoundInterestCalculator\compoundInterestCalculator\obj\Release\compoundInterestCalculator.csproj.GenerateResource.cache
+C:\Users\C#\Desktop\source\repos\compoundInterestCalculator\compoundInterestCalculator\obj\Release\compoundInterestCalculator.csproj.CoreCompileInputs.cache
+C:\Users\C#\Desktop\source\repos\compoundInterestCalculator\compoundInterestCalculator\bin\Release\Compound Interest Calculator.exe.config
+C:\Users\C#\Desktop\source\repos\compoundInterestCalculator\compoundInterestCalculator\bin\Release\Compound Interest Calculator.exe
+C:\Users\C#\Desktop\source\repos\compoundInterestCalculator\compoundInterestCalculator\bin\Release\Compound Interest Calculator.pdb
+C:\Users\C#\Desktop\source\repos\compoundInterestCalculator\compoundInterestCalculator\obj\Release\compoundInterestCalculator.csprojAssemblyReference.cache
+C:\Users\C#\Desktop\source\repos\compoundInterestCalculator\compoundInterestCalculator\obj\Release\Compound Interest Calculator_MarkupCompile.cache
+C:\Users\C#\Desktop\source\repos\compoundInterestCalculator\compoundInterestCalculator\obj\Release\Compound Interest Calculator_MarkupCompile.lref
+C:\Users\C#\Desktop\source\repos\compoundInterestCalculator\compoundInterestCalculator\obj\Release\Compound Interest Calculator.g.resources
+C:\Users\C#\Desktop\source\repos\compoundInterestCalculator\compoundInterestCalculator\obj\Release\Compound Interest Calculator.exe
+C:\Users\C#\Desktop\source\repos\compoundInterestCalculator\compoundInterestCalculator\obj\Release\Compound Interest Calculator.pdb
