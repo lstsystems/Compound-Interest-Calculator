@@ -1,3 +1,3 @@
 # Compound-Interes-Calculator
 
-![plot](privew.JPG)
+![Privew](privew.JPG)
