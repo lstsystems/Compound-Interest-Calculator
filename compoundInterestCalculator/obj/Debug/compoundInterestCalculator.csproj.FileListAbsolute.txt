@@ -1,15 +1,15 @@
-C:\Users\C#\Desktop\source\repos\compoundInterestCalculator\compoundInterestCalculator\bin\Debug\compoundInterestCalculator.exe.config
-C:\Users\C#\Desktop\source\repos\compoundInterestCalculator\compoundInterestCalculator\bin\Debug\compoundInterestCalculator.exe
-C:\Users\C#\Desktop\source\repos\compoundInterestCalculator\compoundInterestCalculator\bin\Debug\compoundInterestCalculator.pdb
 C:\Users\C#\Desktop\source\repos\compoundInterestCalculator\compoundInterestCalculator\obj\Debug\compoundInterestCalculator.csprojAssemblyReference.cache
 C:\Users\C#\Desktop\source\repos\compoundInterestCalculator\compoundInterestCalculator\obj\Debug\MainWindow.g.cs
 C:\Users\C#\Desktop\source\repos\compoundInterestCalculator\compoundInterestCalculator\obj\Debug\App.g.cs
-C:\Users\C#\Desktop\source\repos\compoundInterestCalculator\compoundInterestCalculator\obj\Debug\compoundInterestCalculator_MarkupCompile.cache
-C:\Users\C#\Desktop\source\repos\compoundInterestCalculator\compoundInterestCalculator\obj\Debug\compoundInterestCalculator_MarkupCompile.lref
 C:\Users\C#\Desktop\source\repos\compoundInterestCalculator\compoundInterestCalculator\obj\Debug\MainWindow.baml
-C:\Users\C#\Desktop\source\repos\compoundInterestCalculator\compoundInterestCalculator\obj\Debug\compoundInterestCalculator.g.resources
 C:\Users\C#\Desktop\source\repos\compoundInterestCalculator\compoundInterestCalculator\obj\Debug\compoundInterestCalculator.Properties.Resources.resources
 C:\Users\C#\Desktop\source\repos\compoundInterestCalculator\compoundInterestCalculator\obj\Debug\compoundInterestCalculator.csproj.GenerateResource.cache
 C:\Users\C#\Desktop\source\repos\compoundInterestCalculator\compoundInterestCalculator\obj\Debug\compoundInterestCalculator.csproj.CoreCompileInputs.cache
-C:\Users\C#\Desktop\source\repos\compoundInterestCalculator\compoundInterestCalculator\obj\Debug\compoundInterestCalculator.exe
-C:\Users\C#\Desktop\source\repos\compoundInterestCalculator\compoundInterestCalculator\obj\Debug\compoundInterestCalculator.pdb
+C:\Users\C#\Desktop\source\repos\compoundInterestCalculator\compoundInterestCalculator\bin\Debug\Compound Interest Calculator.exe.config
+C:\Users\C#\Desktop\source\repos\compoundInterestCalculator\compoundInterestCalculator\bin\Debug\Compound Interest Calculator.exe
+C:\Users\C#\Desktop\source\repos\compoundInterestCalculator\compoundInterestCalculator\bin\Debug\Compound Interest Calculator.pdb
+C:\Users\C#\Desktop\source\repos\compoundInterestCalculator\compoundInterestCalculator\obj\Debug\Compound Interest Calculator_MarkupCompile.cache
+C:\Users\C#\Desktop\source\repos\compoundInterestCalculator\compoundInterestCalculator\obj\Debug\Compound Interest Calculator_MarkupCompile.lref
+C:\Users\C#\Desktop\source\repos\compoundInterestCalculator\compoundInterestCalculator\obj\Debug\Compound Interest Calculator.g.resources
+C:\Users\C#\Desktop\source\repos\compoundInterestCalculator\compoundInterestCalculator\obj\Debug\Compound Interest Calculator.exe
+C:\Users\C#\Desktop\source\repos\compoundInterestCalculator\compoundInterestCalculator\obj\Debug\Compound Interest Calculator.pdb

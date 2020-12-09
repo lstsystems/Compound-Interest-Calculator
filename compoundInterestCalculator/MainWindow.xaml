@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:compoundInterestCalculator"
         mc:Ignorable="d"
-        Title="Compound Interest Calculator" Height="450" Width="800">
+        Title="Compound Interest Calculator" Height="450" Width="820">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="20"/>
@@ -89,16 +89,28 @@
         <!-- Results -->
         <StackPanel Grid.Row="1" Grid.Column="1">
             
-            <!-- Future Principal -->
+            <!-- Total Payment -->
             <Grid>
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="*" />
                     <ColumnDefinition Width="*" />
                     <ColumnDefinition Width="20" />
                 </Grid.ColumnDefinitions>
-                <Label Name="FuturePrincipalLabel" Content="Total Payments:" VerticalContentAlignment="Center" FontSize="18" Grid.Column="0"/>
-                <Label Name="FuturePrincipalLabel2"    Grid.Column="1"/>
-                <TextBlock Name="FuturePrincipal" Height="20" TextAlignment="right" Text="0" Padding="0 0 5 0" Margin="0 0 20 0" FontSize="18" Grid.Column="1" FontWeight="Bold"/>
+                <Label Name="TotalPaymentsLabel" Content="Total Payments:" VerticalContentAlignment="Center" FontSize="18" Grid.Column="0"/>
+                <Label Name="TotalPaymentsLabel2"    Grid.Column="1"/>
+                <TextBlock Name="TotalPayments" Height="20" TextAlignment="right" Text="0" Padding="0 0 5 0" Margin="0 0 20 0" FontSize="18" Grid.Column="1" FontWeight="Bold"/>
+            </Grid>
+
+            <!-- Total Payment -->
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="20" />
+                </Grid.ColumnDefinitions>
+                <Label Name="PaymentInterestLabel" Content="Payments + Principal:" VerticalContentAlignment="Center" FontSize="18" Grid.Column="0"/>
+                <Label Name="PaymentInterestLabel2"    Grid.Column="1"/>
+                <TextBlock Name="PaymentInterest" Height="20" TextAlignment="right" Text="0" Padding="0 0 5 0" Margin="0 0 20 0" FontSize="18" Grid.Column="1" FontWeight="Bold"/>
             </Grid>
 
             <!-- Future Interest -->
@@ -120,7 +132,7 @@
                     <ColumnDefinition Width="*" />
                     <ColumnDefinition Width="20" />
                 </Grid.ColumnDefinitions>
-                <Label Name="FutureValueLabel" Content="Future Value:"  VerticalContentAlignment="Center" FontSize="18" Grid.Column="0"/>
+                <Label Name="FutureValueLabel" Content="Total Value:"  VerticalContentAlignment="Center" FontSize="18" Grid.Column="0"/>
                 <Label Name="FutureValueLabel2"  Grid.Column="1" />
                 <TextBlock Name="FutureValue" Height="20" TextAlignment="right" Text="0" Padding="0 0 5 0" Margin="0 0 20 0" FontSize="18" Grid.Column="1" FontWeight="Bold"/>
             </Grid>

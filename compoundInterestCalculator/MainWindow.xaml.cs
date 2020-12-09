@@ -67,21 +67,29 @@ namespace compoundInterestCalculator
 
             double nper = PaymentFrequencyResult * yearsOfGrouthResult;
             double accruedAmount = CompoundInterestWithPayment(principalResults, rate, nper, paymentResult);
-            double principalAmout = paymentResult * nper;
+            double paymentAmout = paymentResult * nper;
+            //MessageBox.Show(principalAmout.ToString("0,000.00"));
 
 
-
-            //Future interest
+            //total interest
             FutureInterestLabel.Background = lightGreen;
             FutureInterestLabel2.Background = lightGreen;
             FutureInterest.Background = lightGreen;
-            FutureInterest.Text = (accruedAmount - principalAmout).ToString("0,000.00");
+            FutureInterest.Text = (accruedAmount - (principalResults + paymentAmout)).ToString("0,000.00");
 
-            //Future principal
-            FuturePrincipalLabel.Background = lightGreen;
-            FuturePrincipalLabel2.Background = lightGreen;
-            FuturePrincipal.Background = lightGreen;
-            FuturePrincipal.Text = principalAmout.ToString("0,000.00");
+            //Total Payments
+            TotalPaymentsLabel.Background = lightGreen;
+            TotalPaymentsLabel2.Background = lightGreen;
+            TotalPayments.Background = lightGreen;
+            TotalPayments.Text = paymentAmout.ToString("0,000.00");
+
+            //Payments + Principal
+            PaymentInterestLabel.Background = lightGreen;
+            PaymentInterestLabel2.Background = lightGreen;
+            PaymentInterest.Background = lightGreen;
+            PaymentInterest.Text = (principalResults + paymentAmout).ToString("0,000.00");
+            
+
 
             //Future total
             FutureValueLabel.Background = Brushes.LightGreen;

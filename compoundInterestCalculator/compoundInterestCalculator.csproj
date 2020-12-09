@@ -40,6 +40,9 @@
   <PropertyGroup>
     <StartupObject>compoundInterestCalculator.App</StartupObject>
   </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Data" />
